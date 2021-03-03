@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Lilihx的博客</title>
-  <icon>https://www.gravatar.com/avatar/fffc31c74fa90cbb0aa6c589d8c0d8b9</icon>
+  <title>Lilihx</title>
+  <icon>https://www.gravatar.com/avatar/a4a54043ccf61d550ecae50bc9c1cd15</icon>
   <subtitle>夏虫语冰~小桥流水~杀你成仁</subtitle>
   <link href="http://example.com/atom.xml" rel="self"/>
   
@@ -11,7 +11,7 @@
   
   <author>
     <name>Lilihx</name>
-    <email>3296701532@qq.com</email>
+    <email>lihxsq@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
@@ -82,19 +82,6 @@
   </entry>
   
   <entry>
-    <title>《设计模式之禅》一：单例模式</title>
-    <link href="http://example.com/2021/01/26/%E5%85%B3%E4%BA%8E%E3%80%8E%E8%84%9A%E6%9C%AC%E6%8E%A5%E5%8F%A3%E5%8C%96%E3%80%8F%E7%9A%84%E6%8E%A2%E7%B4%A2/"/>
-    <id>http://example.com/2021/01/26/%E5%85%B3%E4%BA%8E%E3%80%8E%E8%84%9A%E6%9C%AC%E6%8E%A5%E5%8F%A3%E5%8C%96%E3%80%8F%E7%9A%84%E6%8E%A2%E7%B4%A2/</id>
-    <published>2021-01-26T08:07:00.000Z</published>
-    <updated>2021-02-20T11:08:58.132Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Python数据库连接：Li_Db探索</title>
     <link href="http://example.com/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/"/>
     <id>http://example.com/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/</id>
@@ -115,31 +102,6 @@
     
     
     <category term="Python" scheme="http://example.com/Tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Leetcode 250题系列：10正则表达式匹配</title>
-    <link href="http://example.com/2021/01/20/Leetcode-250%E9%A2%98%E7%B3%BB%E5%88%97%EF%BC%9A1/"/>
-    <id>http://example.com/2021/01/20/Leetcode-250%E9%A2%98%E7%B3%BB%E5%88%97%EF%BC%9A1/</id>
-    <published>2021-01-20T11:59:00.000Z</published>
-    <updated>2021-01-29T10:40:38.769Z</updated>
-    
-    <content type="html"><![CDATA[<p>、</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;、&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="Code" scheme="http://example.com/categories/Code/"/>
-    
-    
-    <category term="Leetcode" scheme="http://example.com/Tags/Leetcode/"/>
     
   </entry>
   
