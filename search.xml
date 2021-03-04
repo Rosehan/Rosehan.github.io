@@ -65,6 +65,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/03/03/hello-world/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+</blockquote>
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Python数据库连接：Li_Db探索</title>
     <url>/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
@@ -90,24 +108,6 @@
       <tags>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/03/03/hello-world/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-</blockquote>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<a id="more"></a>
-
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>一</title>
@@ -160,6 +160,66 @@
       </categories>
       <tags>
         <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Leetcode 之 dfs</title>
+    <url>/2021/03/04/Leetcode-%E4%B9%8B-dfs/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>Dfs : deep first search。深度优先搜索，主要用于数据结构中的树论或图论之中。与之对应的是：广度优先搜索。『寻路算法』的思想主要是：step forward，不行就go back。下面以LeetCode的题目作为举例。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="题目1"><a href="#题目1" class="headerlink" title="题目1"></a>题目1</h2><p><a href="https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/">题目链接：</a></p>
+<p><img src="http://bj.bcebos.com/ibox-thumbnail98/d7bca9ac9f9a2491041c9f18e85c1bc7?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-03-04T05%253A33%253A44Z%252F1800%252F%252Fe493675c50a019f209817c3923d911a5c835a23b6ef07415a2c91a57468f0a15" alt="截屏2021-03-04 下午1.33.38"></p>
+<p>思路：这是一个典型的『寻路』题。下面直接给出代码：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">exist</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board, <span class="built_in">string</span> word)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> rows = board.size();</span><br><span class="line">        <span class="keyword">int</span> cols = board[<span class="number">0</span>].size();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; rows; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; cols; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(dfs(board, word, i, j, <span class="number">0</span>)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">dfs</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board, <span class="built_in">string</span> word, <span class="keyword">int</span> i, <span class="keyword">int</span> j, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">int</span> rows = board.size();</span><br><span class="line">        <span class="keyword">int</span> cols = board[<span class="number">0</span>].size();</span><br><span class="line">        <span class="keyword">if</span>(i &gt;= rows || i &lt; <span class="number">0</span> || j &gt;= cols || j &lt; <span class="number">0</span> || board[i][j] != word[k]) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span>(k == word.size() - <span class="number">1</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        board[i][j] = <span class="string">&#x27;\0&#x27;</span>;</span><br><span class="line">        <span class="keyword">bool</span> res = dfs(board, word, i + <span class="number">1</span>, j, k + <span class="number">1</span>) || dfs(board, word, i - <span class="number">1</span>, j, k + <span class="number">1</span>) || </span><br><span class="line">                      dfs(board, word, i, j + <span class="number">1</span>, k + <span class="number">1</span>) || dfs(board, word, i , j - <span class="number">1</span>, k + <span class="number">1</span>);</span><br><span class="line">        board[i][j] = word[k];</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>实现dfs的主要方式就是递归，这里判断的是字符串是否和某一路径匹配。我们用k作为已经匹配的长度。寻路算法需要注意的几点是：</p>
+<ul>
+<li>某次搜索的结束条件：通常为边界值 + 特定条件。本题中的特定条件是字符串不匹配。</li>
+<li>状态记录：主要记录某节点的状态值：是否访问过 等。在访问某节点后，需要更新状态值。</li>
+<li>回退：当当前节点的各方向都不可达时，需要将当前节点的状态回退。通常是 将已访问 改为 未访问。</li>
+</ul>
+<p>本题的思路中，巧妙的一点是：没有新开状态数组，而是在原字符串数组中，利用特殊字符来记录状态变化。</p>
+<p>另：本题虽然这种方法通过，但是 时空间 表现却极差。<img src="http://bj.bcebos.com/ibox-thumbnail98/a433025c2f0efe2fac7171cbbedf0841?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-03-04T05%253A49%253A45Z%252F1800%252F%252F1291d09016b74a73213d6ae12db083280e5d56cea4e717c93f6f3ccfabb82deb" alt="截屏2021-03-04 下午1.49.40"></p>
+<p>** 分析 **</p>
+<blockquote>
+<p>上述方法对每个节点都进行了大量重复的遍历，我们的跳出判断拦截率不高。我们在做<strong>字符串模式匹配</strong>的时候，注意到其会利用到字符串本身的特性。</p>
+</blockquote>
+<blockquote>
+<p>此外，我们没有利用子问题的解。我可以提供一种思想：比如我们从后往前遍历，记录后面每个节点可以匹配到的末尾字符串数量。比如子节点i,j 可以匹配最后w各字符，那我们往前探寻的时候就可以充分利用子问题的解，减少递归。</p>
+</blockquote>
+<h2 id="题目2："><a href="#题目2：" class="headerlink" title="题目2："></a>题目2：</h2><p><a href="https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/">题目链接</a></p>
+<p><img src="http://bj.bcebos.com/ibox-thumbnail98/96f2291be8d98a60c35256f15449e3c4?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-03-04T05%253A57%253A40Z%252F1800%252F%252F8cce66d9e7722871567fa9a5965d5d87e68df513c70c4f9d9db29dae7cc699dc" alt="截屏2021-03-04 下午1.57.35"></p>
+<p><strong>分析</strong></p>
+<p>该题目和第一题很类似。典型的dfs问题。需要注意的是：</p>
+<ul>
+<li>该dfs的跳出判断是：出界 + 当前节点已访问 + 当前节点不合法</li>
+<li>状态记录：需要新开内存，记录每个节点状态</li>
+<li>回退：该题的回退你可以理解为：路路可达。路路不可达时，回退当前节点。可达时不需要回退。</li>
+</ul>
+<p>** 代码 **</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">cal_num</span> <span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(num &gt;= <span class="number">10</span>) &#123;</span><br><span class="line">            res += (num%<span class="number">10</span>);</span><br><span class="line">            num /= <span class="number">10</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        res += num;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;&gt; &amp;table, <span class="keyword">int</span> width, <span class="keyword">int</span> height, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> row = table.size();</span><br><span class="line">        <span class="keyword">int</span> col = table[<span class="number">0</span>].size();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(width&lt;<span class="number">0</span> || width&gt;=row || height&lt;<span class="number">0</span> || height&gt;=col) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(cal_num(width) + cal_num(height) &gt; k) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span>(table[width][height]) <span class="keyword">return</span>;</span><br><span class="line">        table[width][height] = <span class="literal">true</span>;</span><br><span class="line"></span><br><span class="line">        dfs(table, width<span class="number">-1</span>,height, k);</span><br><span class="line">        dfs(table, width+<span class="number">1</span>,height, k);</span><br><span class="line">        dfs(table, width,height<span class="number">-1</span>, k);</span><br><span class="line">        dfs(table, width,height+<span class="number">1</span>, k);</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">movingCount</span><span class="params">(<span class="keyword">int</span> m, <span class="keyword">int</span> n, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">bool</span>&gt;&gt; table(m);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</span><br><span class="line">            table[i].resize(n);</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j =<span class="number">0</span>; j&lt;n; j++) &#123;</span><br><span class="line">                table[i][j] = <span class="literal">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        dfs(table, <span class="number">0</span>, <span class="number">0</span>, k);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;m; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j =<span class="number">0</span>; j&lt;n; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span>(table[i][j])</span><br><span class="line">                    res ++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+
+<p>注意：</p>
+<blockquote>
+<p>状态数组我用的是bool，bool只能表示两种状态：已访问 未访问。但是本题中还有第三种状态：行列超出范围导致的『节点无效』。关于这个节点无效的处理方式有两种：</p>
+<ul>
+<li>dfs之前：状态方程不用bool，增加第三种状态记录。</li>
+<li>dfs之中：dfs的时候进行判断，状态方程已然用Bool, 只需两种</li>
+</ul>
+<p>前者bool转int，内存增大；后者判断的次数增大，如果单独写cal_num，调用栈 和 调用次数增加，时间和内存也可能增大。</p>
+</blockquote>
+<p>两种方法的时空间表现如下：</p>
+<p><img src="http://bj.bcebos.com/ibox-thumbnail98/0bfbb5793a71a14d904fcd485acdc771?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-03-04T06%253A03%253A53Z%252F1800%252F%252F66e7b475a646a9c8e1386ba05888f5f9109455d15e3fa9a8ac1b8090382fbbff" alt="截屏2021-03-04 下午2.03.48"></p>
+]]></content>
+      <categories>
+        <category>算法</category>
+        <category>Leetcode</category>
+      </categories>
+      <tags>
+        <tag>code</tag>
       </tags>
   </entry>
 </search>
