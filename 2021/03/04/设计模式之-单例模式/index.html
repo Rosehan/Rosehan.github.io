@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言 和h一起去看电影的那年夏天。网上铺天盖地地吹捧《药神》，我看完后忿忿不平。一是悲悯这部电影，已然望见雷池，却迈不过雷池；二是冷眼一群猪瞎叫唤。">
+  <meta name="description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="一">
-<meta property="og:url" content="http://example.com/2021/02/20/%E4%B8%80/index.html">
+<meta property="og:title" content="设计模式之 单例模式">
+<meta property="og:url" content="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Lilihx">
-<meta property="og:description" content="前言 和h一起去看电影的那年夏天。网上铺天盖地地吹捧《药神》，我看完后忿忿不平。一是悲悯这部电影，已然望见雷池，却迈不过雷池；二是冷眼一群猪瞎叫唤。">
+<meta property="og:description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-02-20T11:11:00.000Z">
-<meta property="article:modified_time" content="2021-03-03T03:57:25.650Z">
+<meta property="article:published_time" content="2021-03-04T12:40:00.000Z">
+<meta property="article:modified_time" content="2021-03-04T12:41:28.644Z">
 <meta property="article:author" content="Lilihx">
-<meta property="article:tag" content="随笔">
+<meta property="article:tag" content="设计模式">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/02/20/%E4%B8%80/">
+<link rel="canonical" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>一 | Lilihx</title>
+  <title>设计模式之 单例模式 | Lilihx</title>
   
 
 
@@ -173,7 +173,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/20/%E4%B8%80/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/me.jpg">
@@ -186,7 +186,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          一
+          设计模式之 单例模式
         </h1>
 
         <div class="post-meta">
@@ -195,23 +195,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-02-20 19:11:00" itemprop="dateCreated datePublished" datetime="2021-02-20T19:11:00+08:00">2021-02-20</time>
+              <time title="Created: 2021-03-04 20:40:00 / Modified: 20:41:28" itemprop="dateCreated datePublished" datetime="2021-03-04T20:40:00+08:00">2021-03-04</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-03-03 11:57:25" itemprop="dateModified" datetime="2021-03-03T11:57:25+08:00">2021-03-03</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Heart/" itemprop="url" rel="index"><span itemprop="name">Heart</span></a>
+                  <a href="/categories/Code/" itemprop="url" rel="index"><span itemprop="name">Code</span></a>
                 </span>
             </span>
 
@@ -231,8 +225,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2021/02/20/%E4%B8%80/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/02/20/%E4%B8%80/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -248,47 +242,48 @@
 
       
         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>和h一起去看电影的那年夏天。网上铺天盖地地吹捧《药神》，我看完后忿忿不平。一是悲悯这部电影，已然望见雷池，却迈不过雷池；二是冷眼一群猪瞎叫唤。</p>
+<p>单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it.</p>
+<p>我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。</p>
 </blockquote>
 <a id="more"></a>
 
+<h2 id="单例模式的应用"><a href="#单例模式的应用" class="headerlink" title="单例模式的应用"></a>单例模式的应用</h2><p>优点 和 缺点 和 应用场景：<strong>以书上为例</strong>，不再复制粘贴。</p>
+<p>我只说我的体验：</p>
+<blockquote>
+<p>我曾经要写一个爬虫小项目。分的模块大概有：配置文件读取，种子文件读取，结果文件读取，网页解析等。</p>
+<p>在实现的时候我遇到了一个问题：配置文件读取模块，在几乎所有的模块都需要使用，如果我才用正常的类，那么就需要在每个模块都实例化一个配置模块读取类。然而配置模块读取类，只需要在项目启动的时候，初始化一次，后面几乎不需要改变。</p>
+<p>开始我同样采用static方法，后面把这种类都实现为了单例类。</p>
+</blockquote>
+<p>根据我上面的体验，我观察了书中所写，提取出了符合我上述所想的几点：</p>
+<p>单例模式的优点：</p>
+<ul>
+<li>单例模式可以避免对资源的多重占用，例如一个写文件操作，由于只有一个实例存在与内存中，避免对同一个资源文件的同事写操作。</li>
+<li>单例模式可以在系统设置全局的访问点，优化和共享资源访问，例如可以设计一个单例类，负责对所有数据的映射处理。</li>
+</ul>
+<p>单例模式的缺点：</p>
+<ul>
+<li>扩展困难。</li>
+<li>测试不便。</li>
+<li>单例模式 与 单一职责原则有冲突。一个类应该只实现一个逻辑，而不关心它是否是单例的，是不是要单例取决于环境。单例模式把『要单例』和业务逻辑融合于一个类中</li>
+</ul>
+<p>单例模式的使用场景：</p>
+<ul>
+<li>要求生成唯一序列号的环境</li>
+<li>在整个项目中需要一个共享访问点或共享数据</li>
+<li>需要定义大量的静态常量和静态方法（如工具类）的环境</li>
+</ul>
+<h2 id="单例模式的实现"><a href="#单例模式的实现" class="headerlink" title="单例模式的实现"></a>单例模式的实现</h2><p>以Java为例：线程安全的例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<br/>
-![截屏2021-02-23 下午1.24.19](http://bj.bcebos.com/ibox-thumbnail98/efd8f882ccd6ea478686312db678163d?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-02-23T05%253A24%253A22Z%252F1800%252F%252F021c72be7ac8a442a208bdaad9a7eb8d2f55272791f7f61269f53c9057cd2755)
-即便我一直提防自己，永远以山下人的眼光抬眼看这个世界，永远也别站在道德的制高点。可我还是会纠结，社会太复杂。我一方面感慨共产党领导下的共和国飞速发展，一方面深思发展所付出的代价；一方面对西方诋毁噬之以鼻，另一方面对国内群情激愤失望至极。<br/>
-前段时间，朋友劝我春节做直播，轻松百万粉。我玩笑着回应到：假如我有了百万粉，我就在直播间，对粉丝说：『你们知道吗，你们中的80%都是傻子』。<br/>
 
-<br/>
-这其实就是我对这个社会过于偏激的评价，多数人是猪。一百多年来，变过吗？<br/>
-当然变过，我肯定百余年来中国思想的空前解放。但与改革开放来经济飞速发展相比，我对思想上的解放，极度失望。<br/>
-<br/>
-在我的理念中，我称之为『代价』。<br/>
-经济发展的代价就是思想上的停滞。社会发展的节点，就是一次次抉择。我们选择了A，就相对延缓了B。<br/>
-<br>
-我不得不庆幸的是：我们选择了经济，让我今天能吃饱了撑得，畅所欲言。<br/>
-假如历史重来，我一样支持选A，我甚至会偏激的杀B取A。在我的世界观里，我称之为『杀你成仁』
-<br/>
-<br/>
-只是，即便如此。实事求是，优点是永远不能掩盖缺陷的。
-<br/>
-<br/>
-我溯流而上，追寻答案的时候，总是提醒自己，从0开始，破往生绝学，试开万世太平。然而不过更加迷茫。
-<br/>
-真理在哪里？有真理吗？
-<br/>
-马克思主义带了了唯物辩证法，这是形成我现在思想的关键因素。<br/>
-如果中国的年轻一代，都学了马克思主义，我会将其放到54的空前高度。<br/>
-只是有的即便是共产党员，也未必有多高的觉悟。
-<br/>
-<br/>
-我其实一直不相信自己，我从不认为我说的就是对的。
-<br/>我坚持我，因为我是我，不是我是对的。
-<br/><br/>
-回到开头，我以电影引入。只是为了反驳『脑残粉』。<br/>
-爱不是全盘肯定，我们永远要以辩证法理智地看问题，跳出来，千万不要陷进去。<br/>
-以一个旁观者地角度分析反面观点。
-
-<p>但我也没有百万粉丝啊？怎么偏激地对他们说：<br/><br>『你们知道吗，你们其中大多数都是猪』</p>
+<p>作为对比，这里提供一个线程不安全的例子</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">null</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">if</span>(singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">						singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>线程不安全的例子，当多个线程同时访问到 if 判断为null的语句时，会各自对singeton 进行初始化。</p>
+<p>另：</p>
+<blockquote>
+<p>我最开始举例中，Python版的单例实现方式中用的时construct方法。contruct时Python中在调用Init构造函数之前调用的函数，可以使用construct来实现Python版的单例模式。</p>
+<p>Python类的高级知识，涉及到construct，元类等知识，有兴趣的可以去查一查。</p>
+</blockquote>
 
     </div>
   <div>
@@ -334,7 +329,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2021/02/20/%E4%B8%80/" title="一">http://example.com/2021/02/20/一/</a>
+    <a href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" title="设计模式之 单例模式">http://example.com/2021/03/04/设计模式之-单例模式/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -346,7 +341,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/Tags/%E9%9A%8F%E7%AC%94/" rel="tag"><i class="fa fa-tag"></i> 随笔</a>
+              <a href="/Tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
           </div>
 
         
@@ -355,13 +350,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/" rel="prev" title="Python数据库连接：Li_Db探索">
-      <i class="fa fa-chevron-left"></i> Python数据库连接：Li_Db探索
+    <a href="/2021/03/04/Leetcode-%E4%B9%8B-dfs/" rel="prev" title="Leetcode 之 dfs">
+      <i class="fa fa-chevron-left"></i> Leetcode 之 dfs
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/02/22/Luckyexcel/" rel="next" title="Luckyexcel搭建">
-      Luckyexcel搭建 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -421,7 +413,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">单例模式的应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.</span> <span class="nav-text">单例模式的实现</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
