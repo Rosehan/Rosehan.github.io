@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>First &amp; Why</title>
+    <url>/2021/01/19/First-Why/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>时隔多年，他又拿出了尘封已久的lilihx.com，竟然有了些悔意。</p>
+</blockquote>
+<a id="more"></a>
+
+<p>大概去年，某云一直发邮件通知他的WordPress不合规范，正直当时busy for studying，无暇他顾；再者，time to say bye to my school life。他的学生优惠嘎然而止。便放弃他的博客网站，甚至连备份都没有。</p>
+<p>然工作之后，一个域名于他而言已经不算什么，再者lilihx毕竟和他真名相关，万一以后值钱了呢？抱着买股票的心态，于deadline之前鬼使神差的续费了。</p>
+<p>诚然，他不知道我有多大的耐心去坚持更新我的博客，虽然他一直都有很多想要诉说的。Code OR Program，Sport OR Pop Star，或者简单聊聊自己，聊聊what I want to say to the world. </p>
+<p>我只希望，在俗世浮华之中，能找一个心灵的净土。从容地面对这个世界。</p>
+<p>为天地立心，为生命立命，为往圣继绝学，为万世开太平。</p>
+<p>2020.1.19 22:03</p>
+<p>2021.1.19<br>今早遇雪<br>心头涌出一句：『待到此花飞尽』<br>不恨此花飞尽，恨西园落红难缀，晓雨来过，遗踪何在，一池碎萍。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>heart</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Leetcode 之 dfs</title>
     <url>/2021/03/04/Leetcode-%E4%B9%8B-dfs/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
@@ -53,11 +76,10 @@
 <p><img src="http://bj.bcebos.com/ibox-thumbnail98/0bfbb5793a71a14d904fcd485acdc771?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-03-04T06%253A03%253A53Z%252F1800%252F%252F66e7b475a646a9c8e1386ba05888f5f9109455d15e3fa9a8ac1b8090382fbbff" alt="截屏2021-03-04 下午2.03.48"></p>
 ]]></content>
       <categories>
-        <category>算法</category>
-        <category>Leetcode</category>
+        <category>code</category>
       </categories>
       <tags>
-        <tag>code</tag>
+        <tag>Leetcode</tag>
       </tags>
   </entry>
   <entry>
@@ -94,7 +116,7 @@
 <p>4，… … 其余不支持的功能，看是否能用导入导出 &amp; excel的方式解决。</p>
 ]]></content>
       <categories>
-        <category>Luckysheet</category>
+        <category>code</category>
       </categories>
       <tags>
         <tag>Tool</tag>
@@ -123,32 +145,34 @@
 <h2 id="2，可优化"><a href="#2，可优化" class="headerlink" title="2，可优化"></a>2，可优化</h2><p>Format_SQL只支持最简单的 fileds 和 where语句，更复杂的条件查询，聚合函数等等复杂的SQL，需要优化FormatSQL。我见过一个PHP版本的类似操作，整个文件达到了大几百行，因此实现起来还是很复杂的。</p>
 <p>希望以后能逐步完善。</p>
 ]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
       <tags>
         <tag>Python</tag>
       </tags>
   </entry>
   <entry>
-    <title>设计模式-工厂方法模式</title>
-    <url>/2021/06/09/Test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/03/03/hello-world/</url>
+    <title>梦-2021.7.28</title>
+    <url>/2021/07/28/%E6%A2%A6-2021-07-28/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>古有意大利国弗洛伊德</p>
 </blockquote>
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <a id="more"></a>
 
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="梦"><a href="#梦" class="headerlink" title="梦"></a>梦</h2><p>三舅家的房间里，大家欣喜地看着刚出生的小家伙。光从姥姥的照片上折射到沙发上，形成3D投影般的效果。她就坐在沙发上，阳光洒在她温和的脸上。</p>
+<p>我从梦中迷茫惊醒，半睡半醒间，提醒自己原来还可以这样，让照片经过阳光折射，来形成真人般的效果。</p>
+<h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>昨日，微信群中三jin 子分享小孙女的照片，看着可爱的小家伙，给我印象深刻。</p>
+<p>但有一种情结一直在我心中未解：<br>姥姥没能看到，自己的大孙子结婚，也没能看到自己的重孙女这么可爱。要是她能看到，该有多开心。</p>
+<p>还有我爷爷，<br>已经走了十几年了，<br>十几年前，我家和我叔伯家对内对外的关系远没有现在这么好<br>十几年中，<br>我家的第三代多了一个，第四代多了5个<br>我哥哥姐姐弟弟当中<br>有的国防生去当了兵<br>有的当了中学教师<br>有的中高考全县排前几名，名牌大学毕业<br>。。。<br>这些，他全看不到了。<br>我甚至觉得，他几乎错过了整个我们家族的上升期。</p>
+<p>我不知道该欣慰还是该遗憾。</p>
 ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>梦</tag>
+      </tags>
   </entry>
   <entry>
     <title>一</title>
@@ -251,7 +275,7 @@
 </blockquote>
 ]]></content>
       <categories>
-        <category>Code</category>
+        <category>code</category>
       </categories>
       <tags>
         <tag>设计模式</tag>
