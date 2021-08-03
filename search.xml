@@ -24,6 +24,46 @@
       </tags>
   </entry>
   <entry>
+    <title>Luckyexcel搭建</title>
+    <url>/2021/02/22/Luckyexcel/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>需求：局域网下多人共享excel<br>Luckyexcel是国内开源的在线excel工具，可以嵌入到网站中，也可以单独部署来满足我们的需求。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="1，依赖：node安装"><a href="#1，依赖：node安装" class="headerlink" title="1，依赖：node安装"></a>1，依赖：node安装</h2><p>Luckyexcel依赖于node。因此我们首先需要配置node。</p>
+<p>windows下配置node链接：<a href="https://blog.csdn.net/zjh_746140129/article/details/80460965">点击跳转node安装教程</a></p>
+<p>node安装里面有重要的几步：<br>1，下载node安装<br>2，配置环境变量<br>3，配置npm源</p>
+<p>安装成功的验证方式：<br>windows打开cmd命令行，输入node -v，回车显示版本号</p>
+<p>输入npm -v，回车显示版本号</p>
+<h2 id="2，LuckyExcel安装"><a href="#2，LuckyExcel安装" class="headerlink" title="2，LuckyExcel安装"></a>2，LuckyExcel安装</h2><p>LuckySheet的官方地址：<a href="https://gitee.com/mengshukeji/Luckysheet">点击跳转</a></p>
+<p>LuckyExcel的官方地址:<a href="https://gitee.com/mengshukeji/Luckyexcel#/mengshukeji/Luckyexcel/blob/master/src/index.html">点击跳转</a></p>
+<p>LuckySheet是一个开源的基于node.js的在线表格编辑器，LuckyExcel在luckySheet的基础至上增加了xlsx文件的导入导出。</p>
+<p>LuckyExcel的安装方式：<br/><br>1，使用cmd命令行，cd到某个文件夹，（路径自己定义，但<strong>尽量不要出现中文路径</strong>）</p>
+<p>2，cmd命令行下执行命令</p>
+<p><code>git clone https://gitee.com/mengshukeji/Luckyexcel.git </code></p>
+<p>该命令会将源代码下载到当前路径，生成一个Luckyexcel开头的文件夹</p>
+<p>3，cmd命令行下执行命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 进入到特定目录</span></span><br><span class="line">cd Luckyexcel</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm 下载, 需要时间等待</span></span><br><span class="line">npm install luckyexcel</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm下载，需要时间等待</span></span><br><span class="line">npm install -g gulp-cli</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm安装依赖，需要时间等待</span></span><br><span class="line">npm install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>4, 上述命令没有报错后，证明已经安装成功</p>
+<p>运行 <strong>npm run dev</strong> 命令启动</p>
+<p><img src="http://bj.bcebos.com/ibox-thumbnail98/b33071adb2562076cd47a46b0130a641?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-02-22T06%253A46%253A19Z%252F1800%252F%252Ff8b10b7d0471819c0135f37fc2dd6e2ded46f60999d26e566d632efce94e0da4" alt="截屏2021-02-22 下午2.46.15"></p>
+<p>启动后如上述截图，使用图中的倒数第三行的external链接，在浏览器中访问。</p>
+<h2 id="3，共享"><a href="#3，共享" class="headerlink" title="3，共享"></a>3，共享</h2><p>上述操作在Server的3000端口启动了一个进程，如果Server的网络设置完好，同一局域网下的其余用户也可以正常访问。</p>
+<p>如果网络未设置好，请尝试配置windows下的防火墙或者网络设置，打开3000端口供外部访问即可。</p>
+<h2 id="4，重要说明"><a href="#4，重要说明" class="headerlink" title="4，重要说明"></a>4，重要说明</h2><p>1，上述启动之后，该Server的生命周期 就和 该cmd窗口的生命周期绑定在一起，cmd窗口不能关闭，否则会杀死进程。</p>
+<p>2，该工具暂不支持打印。可以使用 导入 导出功能，将文件导出到本地，使用Excel打印。</p>
+<p>3，该工具不支持新建文件，可以使用子表格的方式。</p>
+<p>4，… … 其余不支持的功能，看是否能用导入导出 &amp; excel的方式解决。</p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Tool</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Leetcode 之 dfs</title>
     <url>/2021/03/04/Leetcode-%E4%B9%8B-dfs/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
@@ -83,76 +123,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Luckyexcel搭建</title>
-    <url>/2021/02/22/Luckyexcel/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>需求：局域网下多人共享excel<br>Luckyexcel是国内开源的在线excel工具，可以嵌入到网站中，也可以单独部署来满足我们的需求。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="1，依赖：node安装"><a href="#1，依赖：node安装" class="headerlink" title="1，依赖：node安装"></a>1，依赖：node安装</h2><p>Luckyexcel依赖于node。因此我们首先需要配置node。</p>
-<p>windows下配置node链接：<a href="https://blog.csdn.net/zjh_746140129/article/details/80460965">点击跳转node安装教程</a></p>
-<p>node安装里面有重要的几步：<br>1，下载node安装<br>2，配置环境变量<br>3，配置npm源</p>
-<p>安装成功的验证方式：<br>windows打开cmd命令行，输入node -v，回车显示版本号</p>
-<p>输入npm -v，回车显示版本号</p>
-<h2 id="2，LuckyExcel安装"><a href="#2，LuckyExcel安装" class="headerlink" title="2，LuckyExcel安装"></a>2，LuckyExcel安装</h2><p>LuckySheet的官方地址：<a href="https://gitee.com/mengshukeji/Luckysheet">点击跳转</a></p>
-<p>LuckyExcel的官方地址:<a href="https://gitee.com/mengshukeji/Luckyexcel#/mengshukeji/Luckyexcel/blob/master/src/index.html">点击跳转</a></p>
-<p>LuckySheet是一个开源的基于node.js的在线表格编辑器，LuckyExcel在luckySheet的基础至上增加了xlsx文件的导入导出。</p>
-<p>LuckyExcel的安装方式：<br/><br>1，使用cmd命令行，cd到某个文件夹，（路径自己定义，但<strong>尽量不要出现中文路径</strong>）</p>
-<p>2，cmd命令行下执行命令</p>
-<p><code>git clone https://gitee.com/mengshukeji/Luckyexcel.git </code></p>
-<p>该命令会将源代码下载到当前路径，生成一个Luckyexcel开头的文件夹</p>
-<p>3，cmd命令行下执行命令</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 进入到特定目录</span></span><br><span class="line">cd Luckyexcel</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm 下载, 需要时间等待</span></span><br><span class="line">npm install luckyexcel</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm下载，需要时间等待</span></span><br><span class="line">npm install -g gulp-cli</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> npm安装依赖，需要时间等待</span></span><br><span class="line">npm install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>4, 上述命令没有报错后，证明已经安装成功</p>
-<p>运行 <strong>npm run dev</strong> 命令启动</p>
-<p><img src="http://bj.bcebos.com/ibox-thumbnail98/b33071adb2562076cd47a46b0130a641?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-02-22T06%253A46%253A19Z%252F1800%252F%252Ff8b10b7d0471819c0135f37fc2dd6e2ded46f60999d26e566d632efce94e0da4" alt="截屏2021-02-22 下午2.46.15"></p>
-<p>启动后如上述截图，使用图中的倒数第三行的external链接，在浏览器中访问。</p>
-<h2 id="3，共享"><a href="#3，共享" class="headerlink" title="3，共享"></a>3，共享</h2><p>上述操作在Server的3000端口启动了一个进程，如果Server的网络设置完好，同一局域网下的其余用户也可以正常访问。</p>
-<p>如果网络未设置好，请尝试配置windows下的防火墙或者网络设置，打开3000端口供外部访问即可。</p>
-<h2 id="4，重要说明"><a href="#4，重要说明" class="headerlink" title="4，重要说明"></a>4，重要说明</h2><p>1，上述启动之后，该Server的生命周期 就和 该cmd窗口的生命周期绑定在一起，cmd窗口不能关闭，否则会杀死进程。</p>
-<p>2，该工具暂不支持打印。可以使用 导入 导出功能，将文件导出到本地，使用Excel打印。</p>
-<p>3，该工具不支持新建文件，可以使用子表格的方式。</p>
-<p>4，… … 其余不支持的功能，看是否能用导入导出 &amp; excel的方式解决。</p>
-]]></content>
-      <categories>
-        <category>code</category>
-      </categories>
-      <tags>
-        <tag>Tool</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Python数据库连接：Li_Db探索</title>
-    <url>/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>在日常编写Python脚本的时候，总会遇到一种头疼的情况：拼接SQL。Pymysql，Mysql-connector等第三方数据库连接工具都只是提供了最简单的execute操作，增删改查语句都需要我们手拼SQL，这在日常开发中是极其不便的。</p>
-</blockquote>
-<blockquote>
-<p>此外，成熟的Server开发语言如Java，PHP等，都会将数据库连接生成配置文件单独维护。因此基于上面两种痛点，自己在PymySQL上封装了一层，来解决这两个问题。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>Li_Db的简单类图如下：</p>
-<p><img src="http://bj.bcebos.com/ibox-thumbnail98/ae57f990546710071579eb8f5b05a5a6?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-01-26T05%253A21%253A04Z%252F1800%252F%252F066b9c87f27dad8b5a19a5ef5f1580cc046e75275ff42a6954fcdb8dc6d39a12" alt="截屏2021-01-26 下午1.21.00"></p>
-<p>一个上层调用者，不再需要导入PyMysql，只需要实例化一个Db_Mgr，然后配置响应的config_file即可。</p>
-<p>一个Format_insert语句如下所示：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">format_insert</span>(<span class="params">table, row</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;DESC: 构造sql语句 </span></span><br><span class="line"><span class="string">    Arguments：</span></span><br><span class="line"><span class="string">    table：表名 </span></span><br><span class="line"><span class="string">    row  ：待插入数据，字典型 </span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    sql = <span class="string">&quot;INSERT INTO %s ( &quot;</span> % table </span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> row.keys():</span><br><span class="line">        sql += <span class="string">&quot;`%s`&quot;</span> % key </span><br><span class="line">        sql += <span class="string">&#x27;,&#x27;</span></span><br><span class="line">    <span class="comment"># 去除最后一个逗号</span></span><br><span class="line">    sql = sql[:-<span class="number">1</span>]</span><br><span class="line">    sql += <span class="string">&#x27;) VALUES (&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> val <span class="keyword">in</span> row.values():</span><br><span class="line">        <span class="comment"># val 是int or float 不用加引号</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">type</span>(val) == <span class="built_in">int</span> <span class="keyword">or</span> <span class="built_in">type</span>(val) == <span class="built_in">float</span>:</span><br><span class="line">            sql += <span class="built_in">str</span>(val)</span><br><span class="line">            sql += <span class="string">&#x27;,&#x27;</span></span><br><span class="line">            <span class="keyword">continue</span> </span><br><span class="line">        sql += (<span class="string">&quot;\&quot;%s\&quot;,&quot;</span> % val)</span><br><span class="line">    <span class="comment"># 去除最后一个,</span></span><br><span class="line">    sql = sql[:-<span class="number">1</span>]</span><br><span class="line">    sql += <span class="string">&#x27;)&#x27;</span>     </span><br><span class="line">    <span class="keyword">return</span> sql </span><br><span class="line"> </span><br></pre></td></tr></table></figure>
-<p>其余的format思想也都类似，调用者只需要传入key-value，Li_Db便可自动将其生成SQL，并执行。</p>
-<p>Db_Mgr代码示例如下所示：</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DBMgr</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;数据库管理类</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, clustername</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;构造函数</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            clustername ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.connect(clustername)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">connect</span>(<span class="params">self, clustername</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;读取cluster配置文件</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            clustername ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 首先读取cluster配置文件</span></span><br><span class="line">        config_filename = <span class="string">&quot;db.ini&quot;</span></span><br><span class="line"></span><br><span class="line">        now_path = os.path.join(os.path.dirname(__file__))</span><br><span class="line">        config_file = os.path.join(now_path, config_filename)</span><br><span class="line">        cf = configparser.ConfigParser()</span><br><span class="line">        cf.read(config_file)</span><br><span class="line"></span><br><span class="line">        ip = cf.get(clustername, <span class="string">&quot;ip&quot;</span>)</span><br><span class="line">        username = cf.get(clustername, <span class="string">&quot;username&quot;</span>)</span><br><span class="line">        password = cf.get(clustername, <span class="string">&quot;password&quot;</span>)</span><br><span class="line">        db = cf.get(clustername, <span class="string">&quot;db&quot;</span>)</span><br><span class="line">        port = cf.getint(clustername, <span class="string">&quot;port&quot;</span>)</span><br><span class="line"></span><br><span class="line">        self.get_conmgr(ip, username, password, db, port)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_conmgr</span>(<span class="params">self, host, user, passwd, db=<span class="string">&#x27;&#x27;</span>, port=<span class="number">3306</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                charset=<span class="string">&#x27;utf8&#x27;</span>, log_name=<span class="literal">None</span>, log_file=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;连接数据库</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            host ([type]): [description]</span></span><br><span class="line"><span class="string">            user ([type]): [description]</span></span><br><span class="line"><span class="string">            passwd ([type]): [description]</span></span><br><span class="line"><span class="string">            db (str, optional): [description]. Defaults to &#x27;&#x27;.</span></span><br><span class="line"><span class="string">            port (int, optional): [description]. Defaults to 3306.</span></span><br><span class="line"><span class="string">            charset (str, optional): [description]. Defaults to &#x27;utf8&#x27;.</span></span><br><span class="line"><span class="string">            log_name ([type], optional): [description]. Defaults to None.</span></span><br><span class="line"><span class="string">            log_file ([type], optional): [description]. Defaults to None.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            self.conn = pymysql.connect(host=host, user=user, </span><br><span class="line">            passwd=passwd, port=port, read_timeout=<span class="number">30</span>, charset=charset)</span><br><span class="line">            self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)</span><br><span class="line">            <span class="keyword">if</span> self.is_db_exist(db):</span><br><span class="line">                self.cur.execute(<span class="string">&#x27;USE %s&#x27;</span> % db)</span><br><span class="line">                print(<span class="string">&#x27;select database success. db: %s&#x27;</span> % db)</span><br><span class="line">                self.db = db</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                self.select_db(db)</span><br><span class="line">            self.cur.execute(<span class="string">&#x27;SET NAMES %s&#x27;</span> % charset)</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % (e))</span><br><span class="line">            self.cur = <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">is_db_exist</span>(<span class="params">self, db</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot; 数据库是否存在</span></span><br><span class="line"><span class="string">            Args:</span></span><br><span class="line"><span class="string">            db: 数据库名称</span></span><br><span class="line"><span class="string">        Return:</span></span><br><span class="line"><span class="string">            True: 存在</span></span><br><span class="line"><span class="string">            False: 不存在</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        table = <span class="string">&#x27;information_schema.SCHEMATA&#x27;</span></span><br><span class="line">        columns = <span class="string">&#x27;*&#x27;</span></span><br><span class="line">        param = <span class="string">&#x27;WHERE SCHEMA_NAME=\&#x27;%s\&#x27;&#x27;</span> % db</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            result = self.query(table, columns, param)</span><br><span class="line">            <span class="keyword">if</span> result:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % (e))</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">execute</span>(<span class="params">self, sql</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;直接执行SQL语句</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            sql ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            self.cur.execute(sql)</span><br><span class="line">            self.conn.commit()</span><br><span class="line">            result = self.cur.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&quot;Mysql Error: %s&quot;</span> % e)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, table, columns, param</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;查询数据库</span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            table: 表名</span></span><br><span class="line"><span class="string">            columns: 插入的列</span></span><br><span class="line"><span class="string">            param: 查询条件</span></span><br><span class="line"><span class="string">        Return:</span></span><br><span class="line"><span class="string">            Dict: 包含查询结果的字典</span></span><br><span class="line"><span class="string">            False: 查询失败</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        sql = <span class="string">&#x27;SELECT %s FROM %s %s&#x27;</span> % (columns, table, param)</span><br><span class="line">        print(<span class="string">&#x27;sql: %s&#x27;</span> % sql)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            self.cur.execute(sql)</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;execute sql cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            result = self.cur.fetchall()</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;fetch result cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            resultdict = []</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> result:</span><br><span class="line">                resultdict.append(item)</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;append result cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            <span class="keyword">return</span> resultdict</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % e)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
-<p>而Db_Mgr可以封装自定义你想要的一切SQL操作，比如getById, multiInsert等等。这样就能在多个Python脚本之中复用了。</p>
-<h2 id="2，可优化"><a href="#2，可优化" class="headerlink" title="2，可优化"></a>2，可优化</h2><p>Format_SQL只支持最简单的 fileds 和 where语句，更复杂的条件查询，聚合函数等等复杂的SQL，需要优化FormatSQL。我见过一个PHP版本的类似操作，整个文件达到了大几百行，因此实现起来还是很复杂的。</p>
-<p>希望以后能逐步完善。</p>
-]]></content>
-      <categories>
-        <category>code</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一</title>
     <url>/2021/02/20/%E4%B8%80/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
@@ -206,6 +176,60 @@
       </tags>
   </entry>
   <entry>
+    <title>Python数据库连接：Li_Db探索</title>
+    <url>/2021/01/26/Python%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%EF%BC%9ALi-Db%E6%8E%A2%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>在日常编写Python脚本的时候，总会遇到一种头疼的情况：拼接SQL。Pymysql，Mysql-connector等第三方数据库连接工具都只是提供了最简单的execute操作，增删改查语句都需要我们手拼SQL，这在日常开发中是极其不便的。</p>
+</blockquote>
+<blockquote>
+<p>此外，成熟的Server开发语言如Java，PHP等，都会将数据库连接生成配置文件单独维护。因此基于上面两种痛点，自己在PymySQL上封装了一层，来解决这两个问题。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>Li_Db的简单类图如下：</p>
+<p><img src="http://bj.bcebos.com/ibox-thumbnail98/ae57f990546710071579eb8f5b05a5a6?authorization=bce-auth-v1%252Ffbe74140929444858491fbf2b6bc0935%252F2021-01-26T05%253A21%253A04Z%252F1800%252F%252F066b9c87f27dad8b5a19a5ef5f1580cc046e75275ff42a6954fcdb8dc6d39a12" alt="截屏2021-01-26 下午1.21.00"></p>
+<p>一个上层调用者，不再需要导入PyMysql，只需要实例化一个Db_Mgr，然后配置响应的config_file即可。</p>
+<p>一个Format_insert语句如下所示：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">format_insert</span>(<span class="params">table, row</span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;DESC: 构造sql语句 </span></span><br><span class="line"><span class="string">    Arguments：</span></span><br><span class="line"><span class="string">    table：表名 </span></span><br><span class="line"><span class="string">    row  ：待插入数据，字典型 </span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    sql = <span class="string">&quot;INSERT INTO %s ( &quot;</span> % table </span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> key <span class="keyword">in</span> row.keys():</span><br><span class="line">        sql += <span class="string">&quot;`%s`&quot;</span> % key </span><br><span class="line">        sql += <span class="string">&#x27;,&#x27;</span></span><br><span class="line">    <span class="comment"># 去除最后一个逗号</span></span><br><span class="line">    sql = sql[:-<span class="number">1</span>]</span><br><span class="line">    sql += <span class="string">&#x27;) VALUES (&#x27;</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> val <span class="keyword">in</span> row.values():</span><br><span class="line">        <span class="comment"># val 是int or float 不用加引号</span></span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">type</span>(val) == <span class="built_in">int</span> <span class="keyword">or</span> <span class="built_in">type</span>(val) == <span class="built_in">float</span>:</span><br><span class="line">            sql += <span class="built_in">str</span>(val)</span><br><span class="line">            sql += <span class="string">&#x27;,&#x27;</span></span><br><span class="line">            <span class="keyword">continue</span> </span><br><span class="line">        sql += (<span class="string">&quot;\&quot;%s\&quot;,&quot;</span> % val)</span><br><span class="line">    <span class="comment"># 去除最后一个,</span></span><br><span class="line">    sql = sql[:-<span class="number">1</span>]</span><br><span class="line">    sql += <span class="string">&#x27;)&#x27;</span>     </span><br><span class="line">    <span class="keyword">return</span> sql </span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+<p>其余的format思想也都类似，调用者只需要传入key-value，Li_Db便可自动将其生成SQL，并执行。</p>
+<p>Db_Mgr代码示例如下所示：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DBMgr</span>(<span class="params"><span class="built_in">object</span></span>):</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;数据库管理类</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    db = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, clustername</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;构造函数</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            clustername ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        self.connect(clustername)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">connect</span>(<span class="params">self, clustername</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;读取cluster配置文件</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            clustername ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 首先读取cluster配置文件</span></span><br><span class="line">        config_filename = <span class="string">&quot;db.ini&quot;</span></span><br><span class="line"></span><br><span class="line">        now_path = os.path.join(os.path.dirname(__file__))</span><br><span class="line">        config_file = os.path.join(now_path, config_filename)</span><br><span class="line">        cf = configparser.ConfigParser()</span><br><span class="line">        cf.read(config_file)</span><br><span class="line"></span><br><span class="line">        ip = cf.get(clustername, <span class="string">&quot;ip&quot;</span>)</span><br><span class="line">        username = cf.get(clustername, <span class="string">&quot;username&quot;</span>)</span><br><span class="line">        password = cf.get(clustername, <span class="string">&quot;password&quot;</span>)</span><br><span class="line">        db = cf.get(clustername, <span class="string">&quot;db&quot;</span>)</span><br><span class="line">        port = cf.getint(clustername, <span class="string">&quot;port&quot;</span>)</span><br><span class="line"></span><br><span class="line">        self.get_conmgr(ip, username, password, db, port)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">get_conmgr</span>(<span class="params">self, host, user, passwd, db=<span class="string">&#x27;&#x27;</span>, port=<span class="number">3306</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                charset=<span class="string">&#x27;utf8&#x27;</span>, log_name=<span class="literal">None</span>, log_file=<span class="literal">None</span></span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;连接数据库</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            host ([type]): [description]</span></span><br><span class="line"><span class="string">            user ([type]): [description]</span></span><br><span class="line"><span class="string">            passwd ([type]): [description]</span></span><br><span class="line"><span class="string">            db (str, optional): [description]. Defaults to &#x27;&#x27;.</span></span><br><span class="line"><span class="string">            port (int, optional): [description]. Defaults to 3306.</span></span><br><span class="line"><span class="string">            charset (str, optional): [description]. Defaults to &#x27;utf8&#x27;.</span></span><br><span class="line"><span class="string">            log_name ([type], optional): [description]. Defaults to None.</span></span><br><span class="line"><span class="string">            log_file ([type], optional): [description]. Defaults to None.</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            self.conn = pymysql.connect(host=host, user=user, </span><br><span class="line">            passwd=passwd, port=port, read_timeout=<span class="number">30</span>, charset=charset)</span><br><span class="line">            self.cur = self.conn.cursor(cursor=pymysql.cursors.DictCursor)</span><br><span class="line">            <span class="keyword">if</span> self.is_db_exist(db):</span><br><span class="line">                self.cur.execute(<span class="string">&#x27;USE %s&#x27;</span> % db)</span><br><span class="line">                print(<span class="string">&#x27;select database success. db: %s&#x27;</span> % db)</span><br><span class="line">                self.db = db</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                self.select_db(db)</span><br><span class="line">            self.cur.execute(<span class="string">&#x27;SET NAMES %s&#x27;</span> % charset)</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % (e))</span><br><span class="line">            self.cur = <span class="literal">False</span></span><br><span class="line">        </span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">is_db_exist</span>(<span class="params">self, db</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot; 数据库是否存在</span></span><br><span class="line"><span class="string">            Args:</span></span><br><span class="line"><span class="string">            db: 数据库名称</span></span><br><span class="line"><span class="string">        Return:</span></span><br><span class="line"><span class="string">            True: 存在</span></span><br><span class="line"><span class="string">            False: 不存在</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        table = <span class="string">&#x27;information_schema.SCHEMATA&#x27;</span></span><br><span class="line">        columns = <span class="string">&#x27;*&#x27;</span></span><br><span class="line">        param = <span class="string">&#x27;WHERE SCHEMA_NAME=\&#x27;%s\&#x27;&#x27;</span> % db</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            result = self.query(table, columns, param)</span><br><span class="line">            <span class="keyword">if</span> result:</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">True</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % (e))</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">execute</span>(<span class="params">self, sql</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;直接执行SQL语句</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            sql ([type]): [description]</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            self.cur.execute(sql)</span><br><span class="line">            self.conn.commit()</span><br><span class="line">            result = self.cur.fetchall()</span><br><span class="line">            <span class="keyword">return</span> result</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&quot;Mysql Error: %s&quot;</span> % e)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">query</span>(<span class="params">self, table, columns, param</span>):</span></span><br><span class="line">        <span class="string">&quot;&quot;&quot;查询数据库</span></span><br><span class="line"><span class="string">        Args:</span></span><br><span class="line"><span class="string">            table: 表名</span></span><br><span class="line"><span class="string">            columns: 插入的列</span></span><br><span class="line"><span class="string">            param: 查询条件</span></span><br><span class="line"><span class="string">        Return:</span></span><br><span class="line"><span class="string">            Dict: 包含查询结果的字典</span></span><br><span class="line"><span class="string">            False: 查询失败</span></span><br><span class="line"><span class="string">        &quot;&quot;&quot;</span></span><br><span class="line">        sql = <span class="string">&#x27;SELECT %s FROM %s %s&#x27;</span> % (columns, table, param)</span><br><span class="line">        print(<span class="string">&#x27;sql: %s&#x27;</span> % sql)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            self.cur.execute(sql)</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;execute sql cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            result = self.cur.fetchall()</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;fetch result cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            resultdict = []</span><br><span class="line">            start_time = time.time()</span><br><span class="line">            <span class="keyword">for</span> item <span class="keyword">in</span> result:</span><br><span class="line">                resultdict.append(item)</span><br><span class="line">            end_time = time.time()</span><br><span class="line">            print(<span class="string">&#x27;append result cost: %f&#x27;</span> % (end_time - start_time))</span><br><span class="line">            <span class="keyword">return</span> resultdict</span><br><span class="line">        <span class="keyword">except</span> pymysql.Error <span class="keyword">as</span> e:</span><br><span class="line">            print(<span class="string">&#x27;Mysql Error: %s&#x27;</span> % e)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">False</span></span><br></pre></td></tr></table></figure>
+<p>而Db_Mgr可以封装自定义你想要的一切SQL操作，比如getById, multiInsert等等。这样就能在多个Python脚本之中复用了。</p>
+<h2 id="2，可优化"><a href="#2，可优化" class="headerlink" title="2，可优化"></a>2，可优化</h2><p>Format_SQL只支持最简单的 fileds 和 where语句，更复杂的条件查询，聚合函数等等复杂的SQL，需要优化FormatSQL。我见过一个PHP版本的类似操作，整个文件达到了大几百行，因此实现起来还是很复杂的。</p>
+<p>希望以后能逐步完善。</p>
+]]></content>
+      <categories>
+        <category>code</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>梦-2021.7.29</title>
+    <url>/2021/07/29/%E6%A2%A6-2021.7.29/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>单身的人别听慢歌</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="梦"><a href="#梦" class="headerlink" title="梦"></a>梦</h2><p>故乡小村落，村口大路<br>我，tt，hl，hw</p>
+<p>tt’s mom 说，我俩再单身，可以考虑下彼此</p>
+<p>准备与 hw 去街上吃饭，路过 hl 家，人刚起<br>准备叫着一起<br>hl’s mom 说，人一会有事，去不了</p>
+<h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>单身的问题，应当是我昨天朋友圈，被我姐嘲讽单身，由此而引发。<br>tt 是我发小，如今同在京。<br>我一直有种被父老乡亲认可的渴望，因此，很希望家乡人说，你看你俩同在京，你好好照料一下她之类的话。<br>梦里，tt’mom 的言论有这种倾向，但是凑一对还是不现实的。</p>
+<p>从村口到镇上，我姑家的那两条路，是我童年时代记忆犹深的地方，因此很多梦中都会出现此场景。</p>
+<p>hw，应当是现实中想到他快要结婚，而我孤身一人，两相对比所起。<br>hl，应当是昨日朋友圈，看到她动态所起。<br>hl’mom 应当是在我心中和 hl 关联比较深，一起出现。</p>
+<p>去街上吃饭，应当是我饿了。<br>这个场景，在我梦中也出现很多次了<br>街两边各种吃的，从东边一直到十字路口那边<br>这应当与我童年记忆有关</p>
+<p>虽然，每一次梦里，我都没有吃到</p>
+]]></content>
+      <categories>
+        <category>Heart</category>
+      </categories>
+      <tags>
+        <tag>梦</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>梦-2021.7.28</title>
     <url>/2021/07/28/%E6%A2%A6-2021.7.28/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
@@ -228,21 +252,32 @@
       </tags>
   </entry>
   <entry>
-    <title>梦-2021.7.29</title>
-    <url>/2021/07/29/%E6%A2%A6-2021.7.29/</url>
+    <title>梦-2021.8.3</title>
+    <url>/2021/08/03/%E6%A2%A6-2021.8.3/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
-<p>单身的人别听慢歌</p>
+<p>意大利国弗洛伊德也解不了</p>
 </blockquote>
 <a id="more"></a>
 
-<h2 id="梦"><a href="#梦" class="headerlink" title="梦"></a>梦</h2><p>故乡小村落，村口大路<br>我，tt，hl，hw</p>
-<p>tt’s mom 说，我俩再单身，可以考虑下彼此</p>
-<p>准备与 hw 去街上吃饭，路过 hl 家，人刚起<br>准备叫着一起<br>hl’s mom 说，人一会有事，去不了</p>
-<h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>单身的问题，应当是我昨天朋友圈，被我姐嘲讽单身，由此而引发。<br>tt 是我发小，如今同在京。<br>我一直有种被父老乡亲认可的渴望，因此，很希望家乡人说，你看你俩同在京，你好好照料一下她之类的话。<br>梦里，tt’mom 的言论有这种倾向，但是凑一对还是不现实的。</p>
-<p>从村口到镇上，我姑家的那两条路，是我童年时代记忆犹深的地方，因此很多梦中都会出现此场景。</p>
-<p>hw，应当是现实中想到他快要结婚，而我孤身一人，两相对比所起。<br>hl，应当是昨日朋友圈，看到她动态所起。<br>hl’mom 应当是在我心中和 hl 关联比较深，一起出现。</p>
-<p>去街上吃饭，应当是我饿了。<br>这个场景，在我梦中也出现很多次了<br>街两边各种吃的，从东边一直到十字路口那边<br>这应当与我童年记忆有关</p>
-<p>虽然，每一次梦里，我都没有吃到</p>
+<h2 id="梦"><a href="#梦" class="headerlink" title="梦"></a>梦</h2><p>王国中，狮子王和小狮子的故事。<br>王国每隔数年都会出现一次灾难，想要化解这个灾难，需要『圣花』<br>其被大狮子放在极高极高的山上，像是长在云端的山。<br>大狮子带着小狮子，一跳就能跳到那云端的山上，取出山口上的花，灾难便解除了，下一朵花继续在山口上孕育。</p>
+<p>大狮子带着小狮子到很高的山上，在那里，星辰就在头上，触手可达。<br>看起来很小，像一个个宝石一样<br>大狮子说，那里面就是外星球，有着一个个世界</p>
+<p>有一个星星里有一个老头（记不清了），和狮子们交谈<br>然后，大狮子和小狮子就跳到了那个星球里面<br>开始了惊险刺激的外星之旅</p>
+<p>（很多细节记不清了）<br>那个老人似乎是个坏人，追杀狮子们<br>狮子们在这个世界里显得很小 （小，这点很重要）<br>路上，有两个像是线条构成的螳螂（像螳螂） （变形金钢里面那个小侦查机器人似的）<br>狮子们找到了一艘小船，坐在船上，顺流而下<br>（河水就像沙滩上，用树枝划了条沟，水从中间流过；船就像小时候折的纸船）<br>两个螳螂会钻地而行</p>
+<p>但是小河到那边断流了<br>原来是前边正在修路，河水被堵住了</p>
+<p>另：<br>同一天晚上，在做这个梦之前，我还陆陆续续做了几个梦。都与家乡场景相关：<br>1，在家乡屋顶上，玩狙击游戏 （荒野大镖客2 中的远程狙击）<br>2，四叔家的场景<br>相对而言，这两个梦我更能清楚地解释。但是不想再多费笔墨。</p>
+<p>。。。 。。。</p>
+<h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>有点难解。</p>
+<h4 id="童话-和-狮子"><a href="#童话-和-狮子" class="headerlink" title="童话 和 狮子"></a>童话 和 狮子</h4><p>针对此次童话画像类梦，根源确实不好追溯，我只能说出自己的推测。<br>我在昨天微信读书上，看到了《月亮与六便士》，这本书我没读过<br>给我的印象是和《小王子》一类的童话书籍<br>狮子的概念，可能来源于我对《狮子王》的好评，但是最近这段时间，并未勾起我对《狮子王》的回忆。<br>是不是由 《月亮与六便士》 -&gt; 《小王子》 -&gt; 《狮子王》 产生的联想，不得而知。</p>
+<h4 id="高山-和-花"><a href="#高山-和-花" class="headerlink" title="高山 和 花"></a>高山 和 花</h4><p>山是极高的山，根在云端，长在云端。<br>花非花，像是长在火山口的圣器。</p>
+<p>山的概念，我无从得知。<br>花有可能是《原神》中，那个在犄角旮旯里飘浮的令牌。</p>
+<p>但是，我真的好久没有玩原神了，也许这个场景在我潜意识里很深刻。</p>
+<h4 id="手可摘星辰"><a href="#手可摘星辰" class="headerlink" title="手可摘星辰"></a>手可摘星辰</h4><p>这是给我印象极深的场景。<br>外星球，就像宝石一般在手边。<br>伸头可望像外星球，可以和外星人交谈。</p>
+<p>难道是我以前『玄幻小说』看的太多 ？</p>
+<h4 id="外星人"><a href="#外星人" class="headerlink" title="外星人"></a>外星人</h4><p>前一个晚上，在看《天才在左，疯子在右》时，确实出现过『外星人』的概念。<br>难道是由此产生的联想 ？</p>
+<h4 id="会钻沙子的螳螂"><a href="#会钻沙子的螳螂" class="headerlink" title="会钻沙子的螳螂"></a>会钻沙子的螳螂</h4><p>同一天晚上，在做这个梦之前，我的另一个梦中：我给我爸讲了变形金钢。<br>（至于为什么，我会在前一个梦中，梦到变形金钢。我在后面说出）<br>钻地螳螂的概念，可能来自变形金钢。<br>那个由钢珠组成的，去基地里找威震天的，小机器人。<br>看着像寥寥几笔线条构成，凌厉</p>
+<h4 id="小船顺流而下"><a href="#小船顺流而下" class="headerlink" title="小船顺流而下"></a>小船顺流而下</h4><p>不得而知。<br>河流的形象，就像是下雨天的小水沟。<br>船的形象，也是很随意的那种形象。</p>
+<h4 id="水因前方修路而被堵住"><a href="#水因前方修路而被堵住" class="headerlink" title="水因前方修路而被堵住"></a>水因前方修路而被堵住</h4><p>不得而知。<br>但是感觉和 『河南大水』并无关联<br>我更觉得和 『成都之行』有关</p>
+<h4 id="前一个梦，为啥会遇到变形金刚"><a href="#前一个梦，为啥会遇到变形金刚" class="headerlink" title="前一个梦，为啥会遇到变形金刚"></a>前一个梦，为啥会遇到变形金刚</h4><p>因为前一段时间，看到的变形金刚战力排名的视频，印象有点深刻。</p>
 ]]></content>
       <categories>
         <category>Heart</category>

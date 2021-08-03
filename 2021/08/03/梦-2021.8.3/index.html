@@ -20,20 +20,20 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
+  <meta name="description" content="前言 意大利国弗洛伊德也解不了">
 <meta property="og:type" content="article">
-<meta property="og:title" content="设计模式之 单例模式">
-<meta property="og:url" content="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:title" content="梦-2021.8.3">
+<meta property="og:url" content="http://example.com/2021/08/03/%E6%A2%A6-2021.8.3/index.html">
 <meta property="og:site_name" content="Lilihx">
-<meta property="og:description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
+<meta property="og:description" content="前言 意大利国弗洛伊德也解不了">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-04T12:40:00.000Z">
-<meta property="article:modified_time" content="2021-07-29T02:07:58.063Z">
+<meta property="article:published_time" content="2021-08-03T02:06:00.000Z">
+<meta property="article:modified_time" content="2021-08-03T03:02:47.449Z">
 <meta property="article:author" content="Lilihx">
-<meta property="article:tag" content="设计模式">
+<meta property="article:tag" content="梦">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+<link rel="canonical" href="http://example.com/2021/08/03/%E6%A2%A6-2021.8.3/">
 
 
 <script id="page-configurations">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>设计模式之 单例模式 | Lilihx</title>
+  <title>梦-2021.8.3 | Lilihx</title>
   
 
 
@@ -199,7 +199,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/03/%E6%A2%A6-2021.8.3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/me.jpg">
@@ -212,7 +212,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          设计模式之 单例模式
+          梦-2021.8.3
         </h1>
 
         <div class="post-meta">
@@ -221,23 +221,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-03-04 20:40:00" itemprop="dateCreated datePublished" datetime="2021-03-04T20:40:00+08:00">2021-03-04</time>
+              <time title="Created: 2021-08-03 10:06:00 / Modified: 11:02:47" itemprop="dateCreated datePublished" datetime="2021-08-03T10:06:00+08:00">2021-08-03</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-07-29 10:07:58" itemprop="dateModified" datetime="2021-07-29T10:07:58+08:00">2021-07-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code/" itemprop="url" rel="index"><span itemprop="name">code</span></a>
+                  <a href="/categories/Heart/" itemprop="url" rel="index"><span itemprop="name">Heart</span></a>
                 </span>
             </span>
 
@@ -257,8 +251,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/08/03/%E6%A2%A6-2021.8.3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/08/03/%E6%A2%A6-2021.8.3/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -273,49 +267,30 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it.</p>
-<p>我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>意大利国弗洛伊德也解不了</p>
 </blockquote>
 <a id="more"></a>
 
-<h1 id="单例模式的应用"><a href="#单例模式的应用" class="headerlink" title="单例模式的应用"></a>单例模式的应用</h1><p>优点 和 缺点 和 应用场景：<strong>以书上为例</strong>，不再复制粘贴。</p>
-<h1 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h1><h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><h3 id="test3"><a href="#test3" class="headerlink" title="test3"></a>test3</h3><h4 id="test4"><a href="#test4" class="headerlink" title="test4"></a>test4</h4><p>我只说我的体验：</p>
-<blockquote>
-<p>我曾经要写一个爬虫小项目。分的模块大概有：配置文件读取，种子文件读取，结果文件读取，网页解析等。</p>
-<p>在实现的时候我遇到了一个问题：配置文件读取模块，在几乎所有的模块都需要使用，如果我才用正常的类，那么就需要在每个模块都实例化一个配置模块读取类。然而配置模块读取类，只需要在项目启动的时候，初始化一次，后面几乎不需要改变。</p>
-<p>开始我同样采用static方法，后面把这种类都实现为了单例类。</p>
-</blockquote>
-<p>根据我上面的体验，我观察了书中所写，提取出了符合我上述所想的几点：</p>
-<p>单例模式的优点：</p>
-<ul>
-<li>单例模式可以避免对资源的多重占用，例如一个写文件操作，由于只有一个实例存在与内存中，避免对同一个资源文件的同事写操作。</li>
-<li>单例模式可以在系统设置全局的访问点，优化和共享资源访问，例如可以设计一个单例类，负责对所有数据的映射处理。</li>
-</ul>
-<p>单例模式的缺点：</p>
-<ul>
-<li>扩展困难。</li>
-<li>测试不便。</li>
-<li>单例模式 与 单一职责原则有冲突。一个类应该只实现一个逻辑，而不关心它是否是单例的，是不是要单例取决于环境。单例模式把『要单例』和业务逻辑融合于一个类中</li>
-</ul>
-<p>单例模式的使用场景：</p>
-<ul>
-<li>要求生成唯一序列号的环境</li>
-<li>在整个项目中需要一个共享访问点或共享数据</li>
-<li>需要定义大量的静态常量和静态方法（如工具类）的环境</li>
-</ul>
-<h2 id="单例模式的实现"><a href="#单例模式的实现" class="headerlink" title="单例模式的实现"></a>单例模式的实现</h2><p>以Java为例：线程安全的例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>作为对比，这里提供一个线程不安全的例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">null</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">if</span>(singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">						singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>线程不安全的例子，当多个线程同时访问到 if 判断为null的语句时，会各自对singeton 进行初始化。</p>
-<p>另：</p>
-<blockquote>
-<p>我最开始举例中，Python版的单例实现方式中用的时construct方法。contruct时Python中在调用Init构造函数之前调用的函数，可以使用construct来实现Python版的单例模式。</p>
-<p>Python类的高级知识，涉及到construct，元类等知识，有兴趣的可以去查一查。</p>
-</blockquote>
+<h2 id="梦"><a href="#梦" class="headerlink" title="梦"></a>梦</h2><p>王国中，狮子王和小狮子的故事。<br>王国每隔数年都会出现一次灾难，想要化解这个灾难，需要『圣花』<br>其被大狮子放在极高极高的山上，像是长在云端的山。<br>大狮子带着小狮子，一跳就能跳到那云端的山上，取出山口上的花，灾难便解除了，下一朵花继续在山口上孕育。</p>
+<p>大狮子带着小狮子到很高的山上，在那里，星辰就在头上，触手可达。<br>看起来很小，像一个个宝石一样<br>大狮子说，那里面就是外星球，有着一个个世界</p>
+<p>有一个星星里有一个老头（记不清了），和狮子们交谈<br>然后，大狮子和小狮子就跳到了那个星球里面<br>开始了惊险刺激的外星之旅</p>
+<p>（很多细节记不清了）<br>那个老人似乎是个坏人，追杀狮子们<br>狮子们在这个世界里显得很小 （小，这点很重要）<br>路上，有两个像是线条构成的螳螂（像螳螂） （变形金钢里面那个小侦查机器人似的）<br>狮子们找到了一艘小船，坐在船上，顺流而下<br>（河水就像沙滩上，用树枝划了条沟，水从中间流过；船就像小时候折的纸船）<br>两个螳螂会钻地而行</p>
+<p>但是小河到那边断流了<br>原来是前边正在修路，河水被堵住了</p>
+<p>另：<br>同一天晚上，在做这个梦之前，我还陆陆续续做了几个梦。都与家乡场景相关：<br>1，在家乡屋顶上，玩狙击游戏 （荒野大镖客2 中的远程狙击）<br>2，四叔家的场景<br>相对而言，这两个梦我更能清楚地解释。但是不想再多费笔墨。</p>
+<p>。。。 。。。</p>
+<h2 id="解"><a href="#解" class="headerlink" title="解"></a>解</h2><p>有点难解。</p>
+<h4 id="童话-和-狮子"><a href="#童话-和-狮子" class="headerlink" title="童话 和 狮子"></a>童话 和 狮子</h4><p>针对此次童话画像类梦，根源确实不好追溯，我只能说出自己的推测。<br>我在昨天微信读书上，看到了《月亮与六便士》，这本书我没读过<br>给我的印象是和《小王子》一类的童话书籍<br>狮子的概念，可能来源于我对《狮子王》的好评，但是最近这段时间，并未勾起我对《狮子王》的回忆。<br>是不是由 《月亮与六便士》 -&gt; 《小王子》 -&gt; 《狮子王》 产生的联想，不得而知。</p>
+<h4 id="高山-和-花"><a href="#高山-和-花" class="headerlink" title="高山 和 花"></a>高山 和 花</h4><p>山是极高的山，根在云端，长在云端。<br>花非花，像是长在火山口的圣器。</p>
+<p>山的概念，我无从得知。<br>花有可能是《原神》中，那个在犄角旮旯里飘浮的令牌。</p>
+<p>但是，我真的好久没有玩原神了，也许这个场景在我潜意识里很深刻。</p>
+<h4 id="手可摘星辰"><a href="#手可摘星辰" class="headerlink" title="手可摘星辰"></a>手可摘星辰</h4><p>这是给我印象极深的场景。<br>外星球，就像宝石一般在手边。<br>伸头可望像外星球，可以和外星人交谈。</p>
+<p>难道是我以前『玄幻小说』看的太多 ？</p>
+<h4 id="外星人"><a href="#外星人" class="headerlink" title="外星人"></a>外星人</h4><p>前一个晚上，在看《天才在左，疯子在右》时，确实出现过『外星人』的概念。<br>难道是由此产生的联想 ？</p>
+<h4 id="会钻沙子的螳螂"><a href="#会钻沙子的螳螂" class="headerlink" title="会钻沙子的螳螂"></a>会钻沙子的螳螂</h4><p>同一天晚上，在做这个梦之前，我的另一个梦中：我给我爸讲了变形金钢。<br>（至于为什么，我会在前一个梦中，梦到变形金钢。我在后面说出）<br>钻地螳螂的概念，可能来自变形金钢。<br>那个由钢珠组成的，去基地里找威震天的，小机器人。<br>看着像寥寥几笔线条构成，凌厉</p>
+<h4 id="小船顺流而下"><a href="#小船顺流而下" class="headerlink" title="小船顺流而下"></a>小船顺流而下</h4><p>不得而知。<br>河流的形象，就像是下雨天的小水沟。<br>船的形象，也是很随意的那种形象。</p>
+<h4 id="水因前方修路而被堵住"><a href="#水因前方修路而被堵住" class="headerlink" title="水因前方修路而被堵住"></a>水因前方修路而被堵住</h4><p>不得而知。<br>但是感觉和 『河南大水』并无关联<br>我更觉得和 『成都之行』有关</p>
+<h4 id="前一个梦，为啥会遇到变形金刚"><a href="#前一个梦，为啥会遇到变形金刚" class="headerlink" title="前一个梦，为啥会遇到变形金刚"></a>前一个梦，为啥会遇到变形金刚</h4><p>因为前一段时间，看到的变形金刚战力排名的视频，印象有点深刻。</p>
 
     </div>
   <div>
@@ -332,6 +307,15 @@
     
     
       
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2021/07/29/梦-2021.7.29/" rel="bookmark">梦-2021.7.29</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/2021/07/28/梦-2021.7.28/" rel="bookmark">梦-2021.7.28</a></div>
+    </li>
+  </ul>
 
         <div class="reward-container">
   <div>Thanks for donating.</div>
@@ -362,7 +346,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link: </strong>
-    <a href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" title="设计模式之 单例模式">http://example.com/2021/03/04/设计模式之-单例模式/</a>
+    <a href="http://example.com/2021/08/03/%E6%A2%A6-2021.8.3/" title="梦-2021.8.3">http://example.com/2021/08/03/梦-2021.8.3/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
@@ -374,7 +358,7 @@
       <footer class="post-footer">
           
           <div class="post-tags">
-              <a href="/Tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
+              <a href="/Tags/%E6%A2%A6/" rel="tag"><i class="fa fa-tag"></i> 梦</a>
           </div>
 
         
@@ -383,13 +367,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/03/04/Leetcode-%E4%B9%8B-dfs/" rel="prev" title="Leetcode 之 dfs">
-      <i class="fa fa-chevron-left"></i> Leetcode 之 dfs
+    <a href="/2021/07/29/%E6%A2%A6-2021.7.29/" rel="prev" title="梦-2021.7.29">
+      <i class="fa fa-chevron-left"></i> 梦-2021.7.29
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/07/28/%E6%A2%A6-2021.7.28/" rel="next" title="梦-2021.7.28">
-      梦-2021.7.28 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -449,7 +430,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">单例模式的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#test1"><span class="nav-number">3.</span> <span class="nav-text">test1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#test2"><span class="nav-number">3.1.</span> <span class="nav-text">test2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#test3"><span class="nav-number">3.1.1.</span> <span class="nav-text">test3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#test4"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">test4</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.2.</span> <span class="nav-text">单例模式的实现</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A2%A6"><span class="nav-number">2.</span> <span class="nav-text">梦</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%A7%A3"><span class="nav-number">3.</span> <span class="nav-text">解</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AB%A5%E8%AF%9D-%E5%92%8C-%E7%8B%AE%E5%AD%90"><span class="nav-number">3.0.1.</span> <span class="nav-text">童话 和 狮子</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%AB%98%E5%B1%B1-%E5%92%8C-%E8%8A%B1"><span class="nav-number">3.0.2.</span> <span class="nav-text">高山 和 花</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%8B%E5%8F%AF%E6%91%98%E6%98%9F%E8%BE%B0"><span class="nav-number">3.0.3.</span> <span class="nav-text">手可摘星辰</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%96%E6%98%9F%E4%BA%BA"><span class="nav-number">3.0.4.</span> <span class="nav-text">外星人</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%9A%E9%92%BB%E6%B2%99%E5%AD%90%E7%9A%84%E8%9E%B3%E8%9E%82"><span class="nav-number">3.0.5.</span> <span class="nav-text">会钻沙子的螳螂</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%8F%E8%88%B9%E9%A1%BA%E6%B5%81%E8%80%8C%E4%B8%8B"><span class="nav-number">3.0.6.</span> <span class="nav-text">小船顺流而下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B0%B4%E5%9B%A0%E5%89%8D%E6%96%B9%E4%BF%AE%E8%B7%AF%E8%80%8C%E8%A2%AB%E5%A0%B5%E4%BD%8F"><span class="nav-number">3.0.7.</span> <span class="nav-text">水因前方修路而被堵住</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%89%8D%E4%B8%80%E4%B8%AA%E6%A2%A6%EF%BC%8C%E4%B8%BA%E5%95%A5%E4%BC%9A%E9%81%87%E5%88%B0%E5%8F%98%E5%BD%A2%E9%87%91%E5%88%9A"><span class="nav-number">3.0.8.</span> <span class="nav-text">前一个梦，为啥会遇到变形金刚</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

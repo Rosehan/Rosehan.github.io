@@ -20,33 +20,31 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="设计模式之 单例模式">
-<meta property="og:url" content="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
+  <meta name="description" content="叶寨小学04级~Buaa16级，就职于百度。不正经的程序员一枚，涉猎广泛。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lilihx">
+<meta property="og:url" content="http://example.com/page/2/index.html">
 <meta property="og:site_name" content="Lilihx">
-<meta property="og:description" content="前言 单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it. 我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。">
+<meta property="og:description" content="叶寨小学04级~Buaa16级，就职于百度。不正经的程序员一枚，涉猎广泛。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-03-04T12:40:00.000Z">
-<meta property="article:modified_time" content="2021-07-29T02:07:58.063Z">
 <meta property="article:author" content="Lilihx">
-<meta property="article:tag" content="设计模式">
+<meta property="article:tag" content="科蜜,豆粉,北漂,Pink,开发者,程序猿,Developer,Programmer,Coder">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+<link rel="canonical" href="http://example.com/page/2/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : false,
-    isPost : true,
+    isHome : true,
+    isPost : false,
     lang   : 'en'
   };
 </script>
 
-  <title>设计模式之 单例模式 | Lilihx</title>
+  <title>Lilihx</title>
   
 
 
@@ -192,14 +190,13 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content index posts-expand">
             
-
-    
+      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/01/19/First-Why/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/me.jpg">
@@ -211,9 +208,10 @@
       <meta itemprop="name" content="Lilihx">
     </span>
       <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          设计模式之 单例模式
-        </h1>
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/01/19/First-Why/" class="post-title-link" itemprop="url">First & Why</a>
+        </h2>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -222,14 +220,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-03-04 20:40:00" itemprop="dateCreated datePublished" datetime="2021-03-04T20:40:00+08:00">2021-03-04</time>
+              <time title="Created: 2021-01-19 10:01:00" itemprop="dateCreated datePublished" datetime="2021-01-19T10:01:00+08:00">2021-01-19</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-07-29 10:07:58" itemprop="dateModified" datetime="2021-07-29T10:07:58+08:00">2021-07-29</time>
+                <time title="Modified: 2021-07-29 10:08:28" itemprop="dateModified" datetime="2021-07-29T10:08:28+08:00">2021-07-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,18 +235,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/code/" itemprop="url" rel="index"><span itemprop="name">code</span></a>
+                  <a href="/categories/Heart/" itemprop="url" rel="index"><span itemprop="name">Heart</span></a>
                 </span>
             </span>
 
           
-            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span>
   
   <span class="post-meta-item">
     
@@ -257,8 +248,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/01/19/First-Why/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/01/19/First-Why/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -273,136 +264,43 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote>
-<p>单例模式(Single Pattern) ：Ensure  a class has only one instance, and provide a global point of access to it.</p>
-<p>我是皇帝我独苗。单例模式作为设计模式中最简单的一种方式，似乎也是我这个小白唯一用过的设计模式。本系列，用以记录对《设计模式之禅》的学习。</p>
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>时隔多年，他又拿出了尘封已久的lilihx.com，竟然有了些悔意。</p>
 </blockquote>
-<a id="more"></a>
-
-<h1 id="单例模式的应用"><a href="#单例模式的应用" class="headerlink" title="单例模式的应用"></a>单例模式的应用</h1><p>优点 和 缺点 和 应用场景：<strong>以书上为例</strong>，不再复制粘贴。</p>
-<h1 id="test1"><a href="#test1" class="headerlink" title="test1"></a>test1</h1><h2 id="test2"><a href="#test2" class="headerlink" title="test2"></a>test2</h2><h3 id="test3"><a href="#test3" class="headerlink" title="test3"></a>test3</h3><h4 id="test4"><a href="#test4" class="headerlink" title="test4"></a>test4</h4><p>我只说我的体验：</p>
-<blockquote>
-<p>我曾经要写一个爬虫小项目。分的模块大概有：配置文件读取，种子文件读取，结果文件读取，网页解析等。</p>
-<p>在实现的时候我遇到了一个问题：配置文件读取模块，在几乎所有的模块都需要使用，如果我才用正常的类，那么就需要在每个模块都实例化一个配置模块读取类。然而配置模块读取类，只需要在项目启动的时候，初始化一次，后面几乎不需要改变。</p>
-<p>开始我同样采用static方法，后面把这种类都实现为了单例类。</p>
-</blockquote>
-<p>根据我上面的体验，我观察了书中所写，提取出了符合我上述所想的几点：</p>
-<p>单例模式的优点：</p>
-<ul>
-<li>单例模式可以避免对资源的多重占用，例如一个写文件操作，由于只有一个实例存在与内存中，避免对同一个资源文件的同事写操作。</li>
-<li>单例模式可以在系统设置全局的访问点，优化和共享资源访问，例如可以设计一个单例类，负责对所有数据的映射处理。</li>
-</ul>
-<p>单例模式的缺点：</p>
-<ul>
-<li>扩展困难。</li>
-<li>测试不便。</li>
-<li>单例模式 与 单一职责原则有冲突。一个类应该只实现一个逻辑，而不关心它是否是单例的，是不是要单例取决于环境。单例模式把『要单例』和业务逻辑融合于一个类中</li>
-</ul>
-<p>单例模式的使用场景：</p>
-<ul>
-<li>要求生成唯一序列号的环境</li>
-<li>在整个项目中需要一个共享访问点或共享数据</li>
-<li>需要定义大量的静态常量和静态方法（如工具类）的环境</li>
-</ul>
-<h2 id="单例模式的实现"><a href="#单例模式的实现" class="headerlink" title="单例模式的实现"></a>单例模式的实现</h2><p>以Java为例：线程安全的例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>作为对比，这里提供一个线程不安全的例子</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Singleton</span> </span>&#123;</span><br><span class="line">		<span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> Singleton singleton = <span class="keyword">null</span>;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 构造参数为私有</span></span><br><span class="line">		<span class="function"><span class="keyword">private</span> <span class="title">Singleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 通过该方法获取实例信息</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Singleton <span class="title">getSingleton</span><span class="params">()</span> </span>&#123;</span><br><span class="line">				<span class="keyword">if</span>(singleton == <span class="keyword">null</span>) &#123;</span><br><span class="line">						singleton = <span class="keyword">new</span> Singleton();</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">return</span> singleton;</span><br><span class="line">		&#125;</span><br><span class="line">		</span><br><span class="line">		<span class="comment">// 类中其他方法，最好是static</span></span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">dosomething</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>线程不安全的例子，当多个线程同时访问到 if 判断为null的语句时，会各自对singeton 进行初始化。</p>
-<p>另：</p>
-<blockquote>
-<p>我最开始举例中，Python版的单例实现方式中用的时construct方法。contruct时Python中在调用Init构造函数之前调用的函数，可以使用construct来实现Python版的单例模式。</p>
-<p>Python类的高级知识，涉及到construct，元类等知识，有兴趣的可以去查一查。</p>
-</blockquote>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2021/01/19/First-Why/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
     </div>
   <div>
     
-      <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------The end.<i class="fa fa-paw"></i> Thanks for reading. -------------</div>
-    
-</div>
-
-    
   </div>
     
     
     
-      
-
-        <div class="reward-container">
-  <div>Thanks for donating.</div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    Donate
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/images/wechatpay.jpg" alt="Lilihx WeChat Pay">
-        <p>WeChat Pay</p>
-      </div>
-      
-      <div style="display: inline-block;">
-        <img src="/images/alipay.jpg" alt="Lilihx Alipay">
-        <p>Alipay</p>
-      </div>
-
-  </div>
-</div>
-
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>Lilihx
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link: </strong>
-    <a href="http://example.com/2021/03/04/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B9%8B-%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" title="设计模式之 单例模式">http://example.com/2021/03/04/设计模式之-单例模式/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
-  </li>
-</ul>
-</div>
-
-
       <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/Tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 设计模式</a>
-          </div>
-
-        
-
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2021/03/04/Leetcode-%E4%B9%8B-dfs/" rel="prev" title="Leetcode 之 dfs">
-      <i class="fa fa-chevron-left"></i> Leetcode 之 dfs
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/07/28/%E6%A2%A6-2021.7.28/" rel="next" title="梦-2021.7.28">
-      梦-2021.7.28 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
+        <div class="post-eof"></div>
       </footer>
-    
   </article>
   
   
   
 
 
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
 
           </div>
           
-    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -449,7 +347,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">单例模式的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#test1"><span class="nav-number">3.</span> <span class="nav-text">test1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#test2"><span class="nav-number">3.1.</span> <span class="nav-text">test2</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#test3"><span class="nav-number">3.1.1.</span> <span class="nav-text">test3</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#test4"><span class="nav-number">3.1.1.1.</span> <span class="nav-text">test4</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">3.2.</span> <span class="nav-text">单例模式的实现</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
