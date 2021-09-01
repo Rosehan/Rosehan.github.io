@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-17T10:42:44.168Z</updated>
+  <updated>2021-09-01T06:26:50.697Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,8 +21,14 @@
     <link href="http://example.com/2021/08/17/%E4%B9%A6%E8%AF%84-%E3%80%8A%E6%AF%9B%E6%B3%BD%E4%B8%9C%E4%BC%A0%E3%80%8B/"/>
     <id>http://example.com/2021/08/17/%E4%B9%A6%E8%AF%84-%E3%80%8A%E6%AF%9B%E6%B3%BD%E4%B8%9C%E4%BC%A0%E3%80%8B/</id>
     <published>2021-08-17T08:12:00.000Z</published>
-    <updated>2021-08-17T10:42:44.168Z</updated>
+    <updated>2021-09-01T06:26:50.697Z</updated>
     
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>政治是最有意思的事</p></blockquote><a id="more"></a><p>什么 ！？<br>你不会真的以为我敢发表什么评论吧</p><p>读完之后，确实能对主席有更客观和深刻的认知<br>至于这认知是什么，1000个读者有1000个哈姆雷特吧</p><p>解放思想，实事求是</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;政治是最有意思的事&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
     
     
     
